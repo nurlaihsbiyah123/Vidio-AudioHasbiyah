@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Halaman Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Tidak bisa scroll */
+      }
+
+      .card {
+        background: white;
+        width: 90%;
+        max-width: 450px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      video {
+        width: 100%;
+        max-height: 55vh; /* Biar tidak kepanjangan */
+        border-radius: 15px;
+        object-fit: cover;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #667eea;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #5a67d8;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>🎥 Natural</h2>
+
+      <video controls>
+        <source
+          src="ssstik.io_@dahliaagustinyy_1770986538794.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <button onclick="window.location.href = 'audio.html'">
+        Ke Halaman Audio 🎵
+      </button>
+    </div>
+  </body>
+</html>

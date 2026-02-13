@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Halaman Audio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .card {
+        background: white;
+        width: 90%;
+        max-width: 450px;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      audio {
+        width: 100%;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 10px;
+        background: #ff758c;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #ff5e7e;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>🎵 Darari</h2>
+
+      <audio controls>
+        <source src="ssstik.io_1770987184083.mp3" type="audio/mpeg" />
+      </audio>
+
+      <button onclick="window.location.href = 'index.html'">
+        Kembali ke Video 🎥
+      </button>
+    </div>
+  </body>
+</html>
